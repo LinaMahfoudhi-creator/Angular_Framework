@@ -1,0 +1,13 @@
+<div class="mini-word">
+  <p [ngStyle]="styleParagraphe()">Test</p>
+
+  <div class="controles">
+    <input type="color" [(ngModel)]="couleur" />
+    <input type="number" [(ngModel)]="taille" />
+    <select [(ngModel)]="police">
+      @for (p of polices; track p) {
+        <option [value]="p">{{ p }}</option>
+      }
+    </select>
+  </div>
+</div>

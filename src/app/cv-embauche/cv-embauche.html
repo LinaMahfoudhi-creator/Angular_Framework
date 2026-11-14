@@ -1,0 +1,13 @@
+@if (embauches().length > 0) {
+  <div class="card card-body bg-body-tertiary">
+    <p class="small mb-2">Liste des cv pré embauchées :</p>
+    <div class="d-flex flex-wrap gap-4 p-3 border border-info rounded-4">
+      @for (cv of embauches(); track cv.id) {
+        <div class="d-flex align-items-center gap-2">
+          <img [src]="cv.path" [alt]="cv.firstname" width="100" height="100" class="rounded-circle object-fit-cover" />
+          <span>{{ cv.firstname }} {{ cv.name }}</span>
+        </div>
+      }
+    </div>
+  </div>
+}

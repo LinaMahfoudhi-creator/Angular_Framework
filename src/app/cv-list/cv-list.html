@@ -1,0 +1,9 @@
+<div class="d-flex flex-column gap-2">
+  @for (cv of cvs(); track cv.id) {
+    <app-cv-item
+      [cv]="cv"
+      [actif]="cv.id === selectedId()"
+      (selected)="selected.emit($event)"
+    />
+  }
+</div>

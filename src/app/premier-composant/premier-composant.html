@@ -1,0 +1,9 @@
+<p>premier-composant works!</p>
+
+<input type="text" [(ngModel)]="couleur" placeholder="Écrivez une couleur (red, #ff0000...)" />
+
+<button (click)="reinitialiser()">Réinitialiser</button>
+
+<div class="conteneur" [style.background-color]="couleur">
+  Cette div change de couleur
+</div>

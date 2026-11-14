@@ -1,0 +1,8 @@
+<div class="d-flex flex-column gap-2">
+  @for (todo of todos(); track todo.id) {
+    <div class="card card-body flex-row align-items-center justify-content-between py-2">
+      <span>{{ todo.name }} : {{ todo.content }}</span>
+      <button class="btn btn-sm btn-outline-danger" (click)="delete(todo.id)" aria-label="Supprimer">🗑</button>
+    </div>
+  }
+</div>

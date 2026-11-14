@@ -1,0 +1,29 @@
+.mini-word {
+  background: #e4e7f0;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+}
+
+p {
+  margin: 0 0 16px;
+}
+
+.controles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+input,
+select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  font-size: 14px;
+}
+
+input[type='color'] {
+  height: 38px;
+  padding: 4px;
+}
